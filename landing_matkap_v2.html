@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подготовка к ЕГЭ 2027 за маткапитал | 99 Баллов</title>
+  <meta name="description" content="Готовьтесь к ЕГЭ 2027 на 85+ баллов — оплата материнским капиталом. 0 рублей из семейного бюджета. Образовательная лицензия, преподаватели-эксперты.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --white: #ffffff;
+      --bg-light: #f8f8f8;
+      --bg-card: #f1f2f5;
+      --text-primary: #1a1a1a;
+      --text-secondary: #333333;
+      --text-muted: #666666;
+      --accent-blue: #1286fd;
+      --accent-blue-dark: #0a6ae8;
+      --accent-purple: #906eff;
+      --accent-purple-light: #c9c2e6;
+      --accent-purple-bg: #d1cfff;
+      --accent-pink: #e92452;
+      --accent-cyan: #00bff3;
+      --black: #1c1c1c;
+      --tag-bg: #d8d9dc;
+      --card-border: #d4d4d4;
+      --trust-blue: #2279ea;
+      --trust-blue-light: #d1e0f3;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--text-primary);
+      line-height: 1.55;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* === NAVBAR === */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid #eee;
+      padding: 16px 0;
+    }
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar-logo {
+      height: 36px;
+    }
+    .navbar-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .navbar-links a {
+      text-decoration: none;
+      color: var(--text-primary);
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .navbar-links a:hover { color: var(--accent-blue); }
+    .navbar-cta {
+      background: var(--accent-blue);
+      color: var(--white) !important;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .navbar-cta:hover { background: var(--accent-blue-dark); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* === HERO === */
+    .hero {
+      padding: 80px 0 60px;
+      background: var(--white);
+      overflow: hidden;
+    }
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-content { max-width: 560px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-purple-bg);
+      color: var(--accent-purple);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+    .hero h1 span { color: var(--accent-blue); }
+    .hero-subtitle {
+      font-size: 22px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .hero-license {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+    .hero-license strong { color: var(--text-secondary); }
+    .hero-cta-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-visual-card {
+      background: var(--bg-card);
+      border-radius: 30px;
+      padding: 40px 32px;
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+    }
+    .hero-visual-card .price-old {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .hero-visual-card .price-old s { color: var(--accent-pink); }
+    .hero-visual-card .price-new {
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .hero-visual-card .price-label {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .hero-visual-card .price-tag {
+      display: inline-block;
+      background: var(--black);
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 30px;
+    }
+    .social-proof-row {
+      display: flex;
+      gap: 32px;
+    }
+    .social-proof-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .social-proof-item .number {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .social-proof-item .label {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    /* === BUTTONS === */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-dark) 100%);
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 600;
+      padding: 16px 36px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(18, 134, 253, 0.3);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--accent-blue);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 50px;
+      border: 2px solid var(--accent-blue);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover {
+      background: rgba(18, 134, 253, 0.06);
+    }
+
+    /* === HOW IT WORKS (МАТКАПИТАЛ) === */
+    .how-section {
+      padding: 80px 0;
+      background: var(--bg-light);
+    }
+    .section-title {
+      font-size: 44px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .section-subtitle {
+      font-size: 18px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 32px;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto 48px;
+    }
+    .comparison-card {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .comparison-card.highlight {
+      background: var(--accent-purple-bg);
+      border: 2px solid var(--accent-purple);
+    }
+    .comparison-card .amount {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .comparison-card .amount.faded { color: var(--text-muted); text-decoration: line-through; }
+    .comparison-card .amount.accent { color: var(--accent-purple); }
+    .comparison-card .desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+    .comparison-card .source {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+    .comparison-vs {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .zero-cost-banner {
+      background: var(--black);
+      color: var(--white);
+      border-radius: 30px;
+      padding: 28px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      flex-wrap: wrap;
+    }
+    .zero-cost-banner .item {
+      text-align: center;
+    }
+    .zero-cost-banner .item .big {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .zero-cost-banner .item .small {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* === STEPS === */
+    .steps-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .step-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .step-number {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent-blue);
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .step-card h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .step-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* === WHAT'S INCLUDED === */
+    .included-section {
+      padding: 80px 0;
+      background: var(--bg-light);
+    }
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .included-item {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 24px 28px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .included-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--accent-purple-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .included-item h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .included-item p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* === TRUST === */
+    .trust-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .trust-card {
+      border-radius: 20px;
+      padding: 32px 28px;
+    }
+    .trust-card.blue { background: var(--trust-blue); color: var(--white); }
+    .trust-card.blue-light { background: var(--trust-blue-light); }
+    .trust-card.dark { background: var(--black); color: var(--white); }
+    .trust-card h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .trust-card p {
+      font-size: 15px;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+    .trust-card.blue-light p { color: var(--text-secondary); }
+    .trust-card .trust-logo {
+      font-size: 13px;
+      font-weight: 600;
+      opacity: 0.6;
+      margin-top: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* === TEACHERS === */
+    .teachers-section {
+      padding: 80px 0;
+      background: var(--bg-light);
+    }
+    .teachers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .teacher-card {
+      background: var(--accent-purple-light);
+      border-radius: 24px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .teacher-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--card-border);
+      margin: 0 auto 16px;
+      overflow: hidden;
+    }
+    .teacher-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .teacher-card .teacher-name {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .teacher-card .teacher-subject {
+      display: inline-block;
+      background: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+    .teacher-card .teacher-quote {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+      font-style: italic;
+    }
+
+    /* === PROGRAMS === */
+    .programs-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .program-card {
+      background: var(--bg-card);
+      border-radius: 24px;
+      padding: 36px 28px;
+      position: relative;
+    }
+    .program-card.popular::before {
+      content: 'Популярное';
+      position: absolute;
+      top: -12px;
+      left: 28px;
+      background: var(--accent-pink);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .program-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .program-card .program-tag {
+      font-size: 14px;
+      color: var(--accent-blue);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .program-card p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .program-card .btn-secondary {
+      width: 100%;
+      font-size: 15px;
+      padding: 12px 24px;
+    }
+
+    /* === UNIVERSITIES === */
+    .unis-section {
+      padding: 60px 0;
+      background: var(--bg-light);
+    }
+    .unis-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .uni-tag {
+      background: var(--tag-bg);
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .uni-tag.large {
+      font-size: 18px;
+      padding: 14px 24px;
+      background: var(--accent-purple-bg);
+      color: var(--accent-purple);
+    }
+
+    /* === REVIEWS === */
+    .reviews-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .review-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      padding: 32px 28px;
+    }
+    .review-card .review-header {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .review-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--card-border);
+    }
+    .review-card .review-name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .review-card .review-score {
+      font-size: 13px;
+      color: var(--accent-blue);
+      font-weight: 600;
+    }
+    .review-card .review-text {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    /* === FAQ === */
+    .faq-section {
+      padding: 80px 0;
+      background: var(--bg-light);
+    }
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--white);
+      border-radius: 16px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 24px 28px;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      font-family: inherit;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--text-muted);
+      transition: transform 0.3s;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+    .faq-item.open .faq-question::after {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-answer-inner {
+      padding: 0 28px 24px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    /* === FINAL CTA === */
+    .final-cta-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+      color: var(--white);
+      text-align: center;
+    }
+    .final-cta-section h2 {
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .final-cta-section p {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      color: var(--accent-blue);
+      font-size: 18px;
+      font-weight: 700;
+      padding: 18px 40px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+    .final-cta-license {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* === FOOTER === */
+    .footer {
+      padding: 40px 0;
+      background: var(--black);
+      color: var(--white);
+    }
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-info {
+      font-size: 14px;
+      opacity: 0.5;
+      line-height: 1.6;
+    }
+    .footer-contacts {
+      text-align: right;
+    }
+    .footer-contacts a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .footer-contacts .footer-links {
+      margin-top: 8px;
+    }
+    .footer-contacts .footer-links a {
+      font-size: 13px;
+      font-weight: 400;
+      opacity: 0.5;
+      display: inline;
+      margin-left: 16px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 1024px) {
+      .hero .container { grid-template-columns: 1fr; gap: 40px; }
+      .hero-content { max-width: 100%; }
+      .hero h1 { font-size: 40px; }
+      .section-title { font-size: 36px; }
+      .comparison-grid { grid-template-columns: 1fr; gap: 16px; }
+      .comparison-vs { text-align: center; }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .teachers-grid { grid-template-columns: repeat(2, 1fr); }
+      .programs-grid { grid-template-columns: 1fr; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 32px; }
+      .hero-cta-row { flex-direction: column; align-items: stretch; }
+      .section-title { font-size: 28px; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .teachers-grid { grid-template-columns: 1fr; }
+      .included-grid { grid-template-columns: 1fr; }
+      .social-proof-row { gap: 20px; }
+      .navbar-links { display: none; }
+      .zero-cost-banner { flex-direction: column; gap: 20px; }
+      .final-cta-section h2 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" role="navigation" aria-label="Навигация">
+  <div class="container">
+    <img src="https://static.tildacdn.com/tild3938-6336-4662-b864-616431383439/LOGO_99_2.svg" alt="99 Баллов" class="navbar-logo">
+    <ul class="navbar-links">
+      <li><a href="#how">Как это работает</a></li>
+      <li><a href="#teachers">Преподаватели</a></li>
+      <li><a href="#programs">Программы</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#signup" class="navbar-cta" aria-label="Записаться на бесплатный урок">Записаться бесплатно</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">🎓 Оплата материнским капиталом</div>
+      <h1>ЕГЭ 2027 на 85+ баллов <span>за&nbsp;0&nbsp;рублей</span></h1>
+      <p class="hero-subtitle">Ваш ребёнок готовится к экзаменам сейчас, а вы оплачиваете обучение материнским капиталом — без трат из семейного бюджета</p>
+      <p class="hero-license">Образовательная лицензия <strong>№ Л035-01237-16/00676983</strong> · Часть Академии «Просвещения»</p>
+      <div class="hero-cta-row">
+        <a href="#signup" class="btn-primary" aria-label="Записаться на бесплатный урок">Записаться на бесплатный урок</a>
+        <a href="#how" class="btn-secondary" aria-label="Узнать подробнее">Узнать подробнее</a>
+      </div>
+      <div class="social-proof-row">
+        <div class="social-proof-item">
+          <span class="number">12 000+</span>
+          <span class="label">учеников<br>подготовлено</span>
+        </div>
+        <div class="social-proof-item">
+          <span class="number">85+</span>
+          <span class="label">средний балл<br>выпускников</span>
+        </div>
+        <div class="social-proof-item">
+          <span class="number">150+</span>
+          <span class="label">стобалльников<br>за 2025 год</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-card">
+        <p class="price-old">Обучение в ВУЗе на коммерции: <s>896 000 ₽</s></p>
+        <p class="price-new">0 ₽</p>
+        <p class="price-label">из вашего семейного бюджета</p>
+        <div class="price-tag">Оплата материнским капиталом</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS (Маткапитал) ===== -->
+<section class="how-section" id="how">
+  <div class="container">
+    <h2 class="section-title">Лучшая инвестиция<br>материнского капитала</h2>
+    <p class="section-subtitle">Подготовка к ЕГЭ стоит в 25 раз дешевле, чем коммерческое место в ВУЗе</p>
+
+    <div class="comparison-grid">
+      <div class="comparison-card">
+        <p class="amount faded">896 000 ₽</p>
+        <p class="desc">Средняя стоимость обучения в ВУЗе на коммерческой основе</p>
+        <p class="source">Данные портала «Табитуриент», 2025</p>
+      </div>
+      <div class="comparison-vs">VS</div>
+      <div class="comparison-card highlight">
+        <p class="amount accent">от 35 000 ₽</p>
+        <p class="desc">Год подготовки в онлайн-школе «99 Баллов»</p>
+        <p class="source">Оплата маткапиталом — 0 ₽ из кармана</p>
+      </div>
+    </div>
+
+    <div class="zero-cost-banner">
+      <div class="item">
+        <div class="big">0 ₽ личных трат 😱</div>
+        <div class="small">Оплата за счёт материнского капитала</div>
+      </div>
+      <div class="item">
+        <div class="big">Экономия до 30% 🔥</div>
+        <div class="small">Фиксируем цены текущего года</div>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="#signup" class="btn-primary" aria-label="Забронировать место">Забронировать место</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4 ШАГА ОПЛАТЫ ===== -->
+<section class="steps-section" id="steps">
+  <div class="container">
+    <h2 class="section-title">Как оплатить маткапиталом</h2>
+    <p class="section-subtitle">Весь процесс занимает 5–10 рабочих дней. Мы помогаем на каждом этапе</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Оставьте заявку</h3>
+        <p>Запишитесь на бесплатный урок. Мы подберём программу и&nbsp;зафиксируем цену</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Подпишите договор</h3>
+        <p>Мы подготовим договор на оказание образовательных услуг с&nbsp;указанием реквизитов</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Подайте заявление</h3>
+        <p>Через Госуслуги или МФЦ подайте заявление о&nbsp;распоряжении маткапиталом. Мы&nbsp;дадим инструкцию</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <h3>Начните учиться</h3>
+        <p>СФР перечислит средства напрямую нам. Ребёнок начинает занятия сразу после подписания договора</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ЧТО ВХОДИТ ===== -->
+<section class="included-section">
+  <div class="container">
+    <h2 class="section-title">Что входит в обучение</h2>
+    <p class="section-subtitle">Всё, что нужно для подготовки к ЕГЭ на 85+ баллов</p>
+
+    <div class="included-grid">
+      <div class="included-item">
+        <div class="included-icon">📹</div>
+        <div>
+          <h4>Онлайн-занятия на платформе</h4>
+          <p>2 раза в неделю по 1,5–2 часа с преподавателем, который сам сдал ЕГЭ на 90+</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <div class="included-icon">📝</div>
+        <div>
+          <h4>Двухуровневые домашние задания</h4>
+          <p>Базовый и продвинутый уровень — каждый ученик работает на своём темпе</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <div class="included-icon">📊</div>
+        <div>
+          <h4>Ежемесячные пробники и зачёты</h4>
+          <p>Отслеживаем прогресс, корректируем программу, информируем родителей</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <div class="included-icon">🧑‍🏫</div>
+        <div>
+          <h4>Поддержка куратора</h4>
+          <p>Личный куратор отвечает на вопросы и помогает не отставать от программы</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <div class="included-icon">👨‍👩‍👧</div>
+        <div>
+          <h4>Еженедельный отчёт родителям</h4>
+          <p>Персональный менеджер высылает прогресс ученика лично родителю</p>
+        </div>
+      </div>
+      <div class="included-item">
+        <div class="included-icon">📱</div>
+        <div>
+          <h4>Персональная программа</h4>
+          <p>Удобно совмещать со школой — занятия вечером, можно из любой точки мира</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST ===== -->
+<section class="trust-section" id="trust">
+  <div class="container">
+    <h2 class="section-title">Почему нам доверяют</h2>
+    <p class="section-subtitle">У нас есть образовательная лицензия, многолетний опыт и тысячи отзывов</p>
+
+    <div class="trust-grid">
+      <div class="trust-card blue">
+        <h4>Образовательная лицензия</h4>
+        <p>Лицензия № Л035-01237-16/00676983 — вы можете оформить налоговый вычет или оплатить маткапиталом</p>
+      </div>
+      <div class="trust-card blue-light">
+        <h4>Часть Академии «Просвещения»</h4>
+        <p>Государственная компания — лидер интегрированных продуктов для обучения и развития</p>
+        <div class="trust-logo">Просвещение</div>
+      </div>
+      <div class="trust-card dark">
+        <h4>Резидент Сколково</h4>
+        <p>Инновационный комплекс по разработке и коммерциализации новых образовательных технологий</p>
+        <div class="trust-logo">Skolkovo</div>
+      </div>
+      <div class="trust-card blue-light">
+        <h4>Информируем родителей</h4>
+        <p>Персональный менеджер еженедельно высылает прогресс ученика лично родителю</p>
+      </div>
+      <div class="trust-card blue">
+        <h4>Актуальные материалы</h4>
+        <p>Постоянно обновляем по нормам ФИПИ и ФГОС — ваш ребёнок готовится по свежим стандартам</p>
+      </div>
+      <div class="trust-card dark">
+        <h4>85+ средний балл</h4>
+        <p>Наши выпускники поступают в МГУ, ВШЭ, МФТИ, ИТМО и другие ведущие ВУЗы страны</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEACHERS ===== -->
+<section class="teachers-section" id="teachers">
+  <div class="container">
+    <h2 class="section-title">Ваша команда преподавателей</h2>
+    <p class="section-subtitle">Преподаватели, которые сами сдали ЕГЭ на 90+ и знают экзамен изнутри</p>
+
+    <div class="teachers-grid">
+      <div class="teacher-card">
+        <div class="teacher-photo"><img src="https://static.tildacdn.com/tild3361-3531-4330-b637-333531623061/photo.png" alt="Софья Буянова"></div>
+        <p class="teacher-name">Софья Буянова</p>
+        <span class="teacher-subject">Математика</span>
+        <p class="teacher-quote">«Ученик не сосуд, который нужно наполнить. Это факел, который нужно зажечь»</p>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-photo"><img src="https://static.tildacdn.com/tild3039-3936-4162-b936-363831633838/photo.png" alt="Алмаз Гайнутдинов"></div>
+        <p class="teacher-name">Алмаз Гайнутдинов</p>
+        <span class="teacher-subject">Математика</span>
+        <p class="teacher-quote">«Люблю показывать, что математика — это простая и интересная наука»</p>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-photo"><img src="https://static.tildacdn.com/tild6230-6237-4638-b135-393561303631/photo.png" alt="Вероника Баграшова"></div>
+        <p class="teacher-name">Вероника Баграшова</p>
+        <span class="teacher-subject">Обществознание</span>
+        <p class="teacher-quote">«Декриминализирую ЕГЭ и превращаю его в понятный инструмент достижения целей»</p>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-photo"><img src="https://static.tildacdn.com/tild6264-3565-4637-a138-376139656466/photo.png" alt="Мария Федотова"></div>
+        <p class="teacher-name">Мария Федотова</p>
+        <span class="teacher-subject">Русский язык</span>
+        <p class="teacher-quote">«Сделать всё, чтобы подготовка ученика прошла с комфортом и минимальным стрессом»</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="#signup" class="btn-primary" aria-label="Записаться на бесплатный урок">Записаться на бесплатный урок</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAMS ===== -->
+<section class="programs-section" id="programs">
+  <div class="container">
+    <h2 class="section-title">Программы, которые легко совмещать со школой</h2>
+    <p class="section-subtitle">Удобные форматы обучения — от групповых до индивидуальных занятий</p>
+
+    <div class="programs-grid">
+      <div class="program-card popular">
+        <h3>Мастер-группа</h3>
+        <p class="program-tag">Самый популярный формат</p>
+        <p>Преподаватель 2 раза в неделю проводит онлайн-занятие на 1,5–2 часа. После занятий — двухуровневое домашнее задание. Вопросы можно задать личному куратору.</p>
+        <a href="#signup" class="btn-secondary" aria-label="Выбрать мастер-группу">Записаться на бесплатный урок</a>
+      </div>
+      <div class="program-card">
+        <h3>Мини-группы</h3>
+        <p class="program-tag">До 8 человек</p>
+        <p>Каждый ученик может задать вопрос преподавателю прямо на занятии и получить детальный разбор. Максимум внимания при групповой цене.</p>
+        <a href="#signup" class="btn-secondary" aria-label="Выбрать мини-группу">Записаться на бесплатный урок</a>
+      </div>
+      <div class="program-card">
+        <h3>Индивидуально</h3>
+        <p class="program-tag">Персональный подход</p>
+        <p>Индивидуальная программа в удобном темпе. Опытный преподаватель поможет разобрать сложные темы и восполнить пробелы в знаниях.</p>
+        <a href="#signup" class="btn-secondary" aria-label="Выбрать индивидуальные занятия">Записаться на бесплатный урок</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UNIVERSITIES ===== -->
+<section class="unis-section">
+  <div class="container">
+    <h2 class="section-title">Куда поступают наши выпускники</h2>
+    <p class="section-subtitle">Высокие баллы ЕГЭ = бюджетное место в ведущих ВУЗах страны</p>
+    <div class="unis-grid">
+      <span class="uni-tag large">МГУ</span>
+      <span class="uni-tag large">НИУ ВШЭ</span>
+      <span class="uni-tag large">МФТИ</span>
+      <span class="uni-tag large">ИТМО</span>
+      <span class="uni-tag large">СПбГУ</span>
+      <span class="uni-tag">КФУ</span>
+      <span class="uni-tag">РАНХиГС</span>
+      <span class="uni-tag">СПбГЭУ</span>
+      <span class="uni-tag">ДВФУ</span>
+      <span class="uni-tag">ТюмГУ</span>
+      <span class="uni-tag">ННГУ</span>
+      <span class="uni-tag">РУДН</span>
+      <span class="uni-tag">СФУ</span>
+      <span class="uni-tag">РГУ (НИУ)</span>
+      <span class="uni-tag">УФУ</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <h2 class="section-title">Отзывы учеников и родителей</h2>
+    <p class="section-subtitle">Реальные результаты наших выпускников</p>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar"></div>
+          <div>
+            <p class="review-name">[Имя ученика]</p>
+            <p class="review-score">Русский язык — 97 баллов</p>
+          </div>
+        </div>
+        <p class="review-text">«[Отзыв ученика о подготовке — конкретный результат, что помогло, как изменился уровень. Заменить реальным отзывом.]»</p>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar"></div>
+          <div>
+            <p class="review-name">[Имя ученика]</p>
+            <p class="review-score">Математика — 94 балла</p>
+          </div>
+        </div>
+        <p class="review-text">«[Отзыв ученика о подготовке — конкретный результат, что помогло, как изменился уровень. Заменить реальным отзывом.]»</p>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar"></div>
+          <div>
+            <p class="review-name">[Имя родителя]</p>
+            <p class="review-score">Оплатили маткапиталом</p>
+          </div>
+        </div>
+        <p class="review-text">«[Отзыв родителя об оплате маткапиталом — как прошёл процесс, насколько просто, помогли ли менеджеры. Заменить реальным отзывом.]»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <h2 class="section-title">Частые вопросы про маткапитал</h2>
+    <p class="section-subtitle">Всё, что нужно знать об оплате обучения материнским капиталом</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Можно ли оплатить маткапиталом подготовку к ЕГЭ?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Да. 99 Баллов работает по образовательной лицензии № Л035-01237-16/00676983, поэтому вы имеете право направить средства материнского капитала на оплату наших образовательных услуг. Это полностью законно и регулируется ФЗ-256.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Какие документы нужны для оплаты?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Договор на оказание образовательных услуг (мы подготовим), сертификат на маткапитал (или выписка из ПФР), СНИЛС мамы и ребёнка, паспорт. Заявление подаётся через Госуслуги или МФЦ — мы дадим пошаговую инструкцию.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Сколько времени занимает оформление?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">СФР рассматривает заявление до 10 рабочих дней, перечисляет средства в течение 5 рабочих дней. Итого — до 3 недель. Ребёнок начинает заниматься сразу после подписания договора, не дожидаясь перевода.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Можно ли оплатить часть маткапиталом, а часть — своими деньгами?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Да, вы можете комбинировать способы оплаты. Например, оплатить маткапиталом основной курс, а индивидуальные занятия — отдельно. Наш менеджер поможет подобрать оптимальную схему.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Подходит ли маткапитал, если ребёнок — первый/единственный?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Да. С 2020 года маткапитал выдаётся и на первого ребёнка. Если у вас есть сертификат и остаток средств — вы можете направить их на образование.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Что если мы передумаем — можно ли вернуть деньги?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Если услуга ещё не оказана, вы можете расторгнуть договор — средства вернутся на счёт маткапитала в СФР. Условия возврата прописаны в договоре. За уже оказанные услуги возврат не производится.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Нужно ли лично приходить в ПФР/СФР?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Нет. Заявление можно подать онлайн через портал Госуслуг или через МФЦ. Личный визит в СФР не требуется.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta-section" id="signup">
+  <div class="container">
+    <h2>Первое занятие — бесплатно</h2>
+    <p>Подберём преподавателя, определим уровень знаний вашего ребёнка и составим индивидуальный план подготовки</p>
+    <a href="#" class="btn-white" aria-label="Записаться на бесплатный урок">Записаться на бесплатный урок</a>
+    <p class="final-cta-license">Образовательная лицензия № Л035-01237-16/00676983 · Оплата маткапиталом · 0 ₽ личных трат</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-info">
+      ООО «99 БАЛЛОВ»<br>
+      Волкова 59, Казань<br>
+      ИНН 1655455610 · ОГРН 1211600024900
+    </div>
+    <div class="footer-contacts">
+      <a href="tel:+78007753368">+7 800 775-33-68</a>
+      <a href="mailto:support@99ballov.ru">support@99ballov.ru</a>
+      <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    // Open clicked if it was closed
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
